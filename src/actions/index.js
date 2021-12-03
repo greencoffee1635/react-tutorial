@@ -1,6 +1,13 @@
-export const increment = () => {
+// export const increment = () => {
+//   return {
+//     type: "INCREMENT",
+//   };
+// };
+
+export const increment = multiply => {
   return {
     type: "INCREMENT",
+    payload: multiply,
   };
 };
 
