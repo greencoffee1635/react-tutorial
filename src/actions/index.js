@@ -1,18 +1,18 @@
-// export const increment = () => {
-//   return {
-//     type: "INCREMENT",
-//   };
-// };
-
-export const increment = multiply => {
+export const increment = () => {
   return {
     type: "INCREMENT",
-    payload: multiply,
   };
 };
 
 export const decrement = () => {
   return {
     type: "DECREMENT",
+  };
+};
+
+export const incrementByAmount = multiply => {
+  return {
+    type: "INCREMENTBYAMOUNT",
+    payload: multiply,
   };
 };
